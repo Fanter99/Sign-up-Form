@@ -15,29 +15,18 @@
 
 
   <form method="post" action="{% url 'login' %}" class="form-main">
-
-  <!--  <table>
-      <tr>
-        <td>{{ form.username.label_tag }}</td>
-       <td>{{ form.username }}</td>
-      </tr>
-      <tr>
-        <td>{{ form.password.label_tag }}</td>
-        <td>{{ form.password }}</td>
-      </tr>
-    </table> -->
-  <div class="form-example">
-    <label for="text">Enter your login: </label>
-    <input type="text" name="username" id="text" required>
-  </div>
-  <div class="form-example">
-    <label for="password">Password: </label>
-    <input type="password" name="password" id="password" required>
-  </div>
     <div class="form-example">
-      <input id= "signin" type="submit" value="Sign in!">
-      <input type="hidden" name="next" value="{{ next }}">
+      <label for="text">Enter your login: </label>
+      <input type="text" name="username" id="text" required>
     </div>
+    <div class="form-example">
+      <label for="password">Password: </label>
+      <input type="password" name="password" id="password" required>
+    </div>
+      <div class="form-example">
+        <input id= "signin" type="submit" value="Sign in!">
+        <input type="hidden" name="next" value="{{ next }}">
+      </div>
 
   </form>
     <div>
